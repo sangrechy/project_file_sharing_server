@@ -32,7 +32,7 @@ Fast File Sharer is a simple web application for uploading and downloading files
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/sangrechy/project_file_sharing_server.git
-   cd project_file_sharing_server
+   cd project_file_sharing_server/app
    ```
 2. **Install dependencies**:
    ```sh
