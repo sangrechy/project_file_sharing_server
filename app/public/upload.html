@@ -1,0 +1,42 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function showPopup() {
+            alert("File Uploaded Successfully!");
+        }
+    </script>
+
+    <style>
+        input[type="file"] {
+            margin: 20px 0;
+            padding: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body class="box">
+
+    <div class="sbox">
+        <h2 class="functionhead">Upload File</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data" onsubmit="showPopup()">
+            <input type="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+
+</body>
+</html>

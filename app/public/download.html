@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        
+        li {
+            background:rgba(0, 0, 0, 0.9);
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+    
+    <script>
+        async function getFiles() {
+            try {
+                const response = await fetch('/files');
+                const files = await response.json();
+                let fileList = document.getElementById('fileList');
+                fileList.innerHTML = '';
+                
+                files.forEach(file => {
+                    let listItem = document.createElement('li');
+                    let link = document.createElement('a');
+                    link.href = `/download/${file}`;
+                    link.textContent = file;
+                    link.download = file;
+                    listItem.appendChild(link);
+                    fileList.appendChild(listItem);
+                });
+            } catch (err) {
+                console.error("Error fetching files:", err);
+            }
+        }
+        window.onload = getFiles;
+    </script>
+
+
+</head>
+<body class="box">
+    <div class="sbox">
+        <h2 class="functionhead">Uploaded Files</h2>
+        <ul style="list-style-type: none; padding: 0;" id="fileList"></ul>
+    </div>
+</body>
+</html>
