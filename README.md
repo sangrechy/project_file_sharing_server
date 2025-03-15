@@ -4,18 +4,26 @@ Fast File Sharer is a simple web application for uploading and downloading files
 📂 Directory Structure
 /project-root
 │── /public
-│   │── /css
+│   ├── /css
 │   │   ├── styles.css
-│   │── /images
+│   ├── /images
 │   │   ├── ICON.png
 │   │   ├── twitter.png
 │   │   ├── instagram.png
 │   │   ├── facebook.png
-│   │── main.html
-│   │── home.html
-│   │── upload.html
-│   │── download.html
+│   ├── main.html
+│   ├── home.html
+│   ├── upload.html
+│   ├── download.html
 │── /uploads  # (Stores uploaded files)
+│── /routes
+│   ├── fileRoutes.js
+│── /controllers
+│   ├── fileController.js
+│── /middleware
+│   ├── uploadMiddleware.js
+│── /config
+│   ├── serverConfig.js
 │── server.js
 │── package.json
 │── README.md
@@ -29,7 +37,7 @@ Fast File Sharer is a simple web application for uploading and downloading files
 Clone the repository:
 ```sh
 git clone https://github.com/sangrechy/project_file_sharing_server.git
-cd project_file_sharing_server/app
+cd project_file_sharing_server
 ```
 Install dependencies:
 ```sh
