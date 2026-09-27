@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Uploaded content (keep directory structure via .gitkeep)
+uploads/*
+!uploads/.gitkeep
+
+# Large media files
+*.mp4
+*.mkv
+*.avi
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment & OS files
+.env
+.DS_Store
+Thumbs.db

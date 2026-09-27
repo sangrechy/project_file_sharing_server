@@ -3,42 +3,46 @@
 Fast File Sharer is a simple web application for uploading and downloading files efficiently. It features a clean user interface for seamless file management.
 
 ## 📂 Directory Structure
-```
-/project-root
-│── /public
-│   │── /css
-│   │   ├── styles.css
-│   │── /images
-│   │   ├── ICON.png
-│   │   ├── twitter.png
-│   │   ├── instagram.png
-│   │   ├── facebook.png
-│   │── main.html
-│   │── home.html
-│   │── upload.html
-│   │── download.html
-│── /uploads  # (Stores uploaded files)
-│── server.js
-│── package.json
-│── README.md
-│── .gitignore
+```text
+project_file_sharing_server/
+├── v1/
+│   ├── public/
+│   │   ├── css/
+│   │   │   └── styles.css
+│   │   ├── images/
+│   │   │   ├── ICON.png
+│   │   │   ├── twitter.png
+│   │   │   ├── instagram.png
+│   │   │   └── facebook.png
+│   │   ├── main.html
+│   │   ├── home.html
+│   │   ├── upload.html
+│   │   ├── download.html
+│   │   ├── script.js
+│   │   └── styles.css
+│   ├── uploads/  # (Stores uploaded files)
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+├── .gitignore
+├── README.md
+└── LICENSE
 ```
 
 ## 🚀 Features
 - 📤 Upload and manage files easily
 - 📥 Download files seamlessly
 
-## 📋Requirements:
+## 📋 Requirements:
 - Node.js (https://nodejs.org/)
 - Express.js
 - Multer
-
 
 ## 🛠️ Setup & Installation
 1. **Clone the repository**:
    ```sh
    git clone https://github.com/sangrechy/project_file_sharing_server.git
-   cd project_file_sharing_server/app
+   cd project_file_sharing_server/v1
    ```
 2. **Install dependencies**:
    ```sh

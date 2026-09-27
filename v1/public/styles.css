@@ -1,0 +1,159 @@
+
+/*---------------------------for all-------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+#whiteline {
+    background-color: white;
+}
+/*-------------------------------------------------------------------------*/
+
+/*--------------------------------------------header(main.html)-------------------------*/
+.header {
+    height: 90px;
+    background-color: black;
+}
+#headerimage {
+    height: 60px;
+    float: left;
+    padding: 10px;
+    padding-left: 60px;
+}
+#headertext {
+    color: white;
+    font-size: 20px;
+    margin-right: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+/*-------------------------------------------------------------------------*/
+
+
+/*--------------------------------------nav(main.html)-------------------------------------*/
+.nav {
+    text-align: center;
+    background-color: black;
+    height: 50px;
+    padding-right: 10px;
+}
+#navhome {
+    padding-top: 15px;
+    padding-left: 20px;
+    float: left;
+    color: white;
+}
+.iframe{
+    width: 100%;
+    height: 100vh;
+    border: none;
+    display: block;
+    overflow: hidden;
+}
+/*-------------------------------------------------------------------------*/
+
+/*-----------------------------aside(home.html)---------------------------------*/
+.aside {
+    float: left;
+    position: absolute;
+    width: 200px;
+    color: white;
+    background-color: aquamarine;
+    margin-top: 5px;
+    margin-left: 10px;
+    padding-top: 5px;
+    text-align: center;
+    border-width: 5px;
+    border-color: black;
+    border-style: outset;
+}
+#ahr {
+    margin: 10px;
+    height: 2px;
+    background-color: white;
+}
+#asidelink {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+/*-------------------------------------------------------------------------*/
+
+/*--------------------------------------section(home.html)------------------------------*/
+.section {
+    color: white;
+    font-size: 25px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    width: auto;
+}
+.iframe2 {
+    color: white;
+    margin-top: 50px;
+    width: 100%;
+}
+/*-------------------------------------------------------------------------*/
+
+/*---------------------------------- (upload.html,download.html) ----------------------------------------*/
+
+.box {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+.sbox {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+.functionhead{
+    color: #333;
+}
+
+/*-------------------------------------------------------------------------*/
+
+/*----------------------------------footer(main.html)--------------------------------*/
+.footer {
+    height: 100px;
+    padding-top: 20px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+#footerline {
+    border-left: 6px solid green;
+    height: 100px;
+    position: static;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+#footermedia {
+    border-style: dashed;
+    border-color: white;
+    border-width: 0;
+    border-left-width: 2px;
+    float: right;
+    padding-left: 10px;
+    padding-right: 30px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#footertext {
+    font-size: 20px;
+}
+#footerlink {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+#medialogo {
+    width: 10px;
+}
+/*----------------------------------------------------------------------------*/
